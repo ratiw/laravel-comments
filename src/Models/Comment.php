@@ -2,6 +2,7 @@
 
 namespace Ratiw\Comments\Models;
 
+use Illuminate\Database\Eloquent\Casts\AsArrayObject;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -16,6 +17,10 @@ class Comment extends Model implements IsComment
     use SoftDeletes;
 
     protected $guarded = [];
+
+    protected $casts = [
+        'options' => AsArrayObject::class,
+    ];
 
     public function commentable(): MorphTo
     {
