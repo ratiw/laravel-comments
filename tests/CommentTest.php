@@ -33,6 +33,20 @@ it('can be created', function () {
     ]);
 });
 
+it('can be created with an action', function () {
+    $post = Post::create();
+    $comment = $post->actionComment('liked', 'Thanks!');
+    assertDatabaseHas('comments', [
+        'id' => $comment->getKey(),
+        'content' => 'Thanks!',
+        'options' => json_encode([
+            'action' => 'liked',
+        ]),
+    ]);
+    expect($comment->getAction())->toBe('liked');
+    expect($comment->getAction())->not()->toBe('commented');
+});
+
 it('can belong to a user', function () {
     login();
 

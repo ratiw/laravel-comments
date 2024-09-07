@@ -41,4 +41,9 @@ class Comment extends Model implements IsComment
     {
         return $this->hasMany(static::class, 'parent_id');
     }
+
+    public function getAction(): string
+    {
+        return $this->options['action'] ?? 'commented';
+    }
 }

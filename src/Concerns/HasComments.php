@@ -24,6 +24,21 @@ trait HasComments
             'content' => $content,
             'user_id' => $user ? $user->getKey() : Auth::id(),
             'parent_id' => $parent?->getKey(),
+            'options' => [
+                'action' => 'commented',
+            ]
+        ]);
+    }
+
+    public function actionComment(string $action, string $content, Model $user = null, IsComment $parent = null): IsComment
+    {
+        return $this->comments()->create([
+            'content' => $content,
+            'user_id' => $user ? $user->getKey() : Auth::id(),
+            'parent_id' => $parent?->getKey(),
+            'options' => [
+                'action' => $action,
+            ]
         ]);
     }
 }
