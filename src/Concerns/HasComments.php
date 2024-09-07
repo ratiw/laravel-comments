@@ -26,7 +26,7 @@ trait HasComments
             'parent_id' => $parent?->getKey(),
             'options' => [
                 'action' => 'commented',
-            ]
+            ],
         ]);
     }
 
@@ -38,7 +38,7 @@ trait HasComments
             'parent_id' => $parent?->getKey(),
             'options' => [
                 'action' => $action,
-            ]
+            ],
         ]);
     }
 }
