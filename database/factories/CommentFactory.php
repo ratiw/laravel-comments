@@ -1,9 +1,9 @@
 <?php
 
-namespace RyanChandler\Comments\Database\Factories;
+namespace Ratiw\Comments\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use RyanChandler\Comments\Models\Comment;
+use Ratiw\Comments\Models\Comment;
 
 class CommentFactory extends Factory
 {

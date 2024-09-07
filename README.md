@@ -1,4 +1,5 @@
 # A dead-simple comments package for Laravel.
+## This is a fork of [ryangjchandler/laravel-comments](https://github.com/ryangjchandler/laravel-comments)
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/ryangjchandler/laravel-comments.svg?style=flat-square)](https://packagist.org/packages/ryangjchandler/laravel-comments)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/ryangjchandler/laravel-comments/run-tests?label=tests)](https://github.com/ryangjchandler/laravel-comments/actions?query=workflow%3Arun-tests+branch%3Amain)

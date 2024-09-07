@@ -1,6 +1,6 @@
 <?php
 
-namespace RyanChandler\Comments\Contracts;
+namespace Ratiw\Comments\Contracts;
 
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;

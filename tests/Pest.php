@@ -4,7 +4,7 @@ use Orchestra\Testbench\Factories\UserFactory;
 
 use function Pest\Laravel\actingAs;
 
-use RyanChandler\Comments\Tests\TestCase;
+use Ratiw\Comments\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);
 

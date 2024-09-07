@@ -1,11 +1,11 @@
 <?php
 
-namespace RyanChandler\Comments\Concerns;
+namespace Ratiw\Comments\Concerns;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Support\Facades\Auth;
-use RyanChandler\Comments\Contracts\IsComment;
+use Ratiw\Comments\Contracts\IsComment;
 
 /**
  * @mixin \Illuminate\Database\Eloquent\Model

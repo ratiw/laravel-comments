@@ -14,6 +14,7 @@ return new class extends Migration
             $table->unsignedBigInteger('user_id')->index()->nullable();
             $table->morphs('commentable');
             $table->longText('content');
+            $table->json('options')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

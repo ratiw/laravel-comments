@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Schema;
 
 use function Pest\Laravel\assertDatabaseHas;
 
-use RyanChandler\Comments\Concerns\HasComments;
+use Ratiw\Comments\Concerns\HasComments;
 
 class Post extends Model
 {
