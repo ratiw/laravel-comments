@@ -41,4 +41,9 @@ trait HasComments
             ],
         ]);
     }
+
+    public function commentWithAction(string $action, string $content, Model $user = null, IsComment $parent = null): IsComment
+    {
+        return $this->actionComment($action, $content, $user, $parent);
+    }
 }
